@@ -34,7 +34,7 @@ class WordSearch:
         for i in range (numWordsToFind):
             self.wordsToFind.append(random.choice(dictionary))
         
-        #Less runtime to place longer words early, move them to front of list
+        #Better to place large words first
         self.wordsToFind.sort(key=len, reverse=True)
         
         #Loop to randomly place words. Loop attempts to place words that
